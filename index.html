@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Newspaper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" >
+                <img src="./assets/logo.png" alt="company logo" id="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports.html')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance.html')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics.html')">Politics</li>
+                    <li class="hover-link nav-item" id="Health" onclick="onNavItemClick('Health.html')">Health</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
